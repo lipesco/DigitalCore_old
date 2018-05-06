@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -18,8 +19,9 @@ namespace DigitalCore.Models
         [Required]
         public int numeroSerie { get; set; }
 
-        [Required]
-        public int tipo { get; set; }
+        [ForeignKey("TipoProduto")]
+        public int TipoFK { get; set; }
+        public virtual TipoProduto TipoProduto { get; set; }
 
         [Required]
         public string descricao { get; set; }

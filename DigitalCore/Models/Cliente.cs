@@ -17,7 +17,7 @@ namespace DigitalCore.Models
         public int ID { get; set; }
         [Required]
         [StringLength(50)]
-        public string Nome { get; set; }
+        public string nome { get; set; }
 
         [Required]
         [StringLength(15)]
