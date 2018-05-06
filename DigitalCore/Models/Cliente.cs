@@ -35,9 +35,9 @@ namespace DigitalCore.Models
         [StringLength(50)]
         public string email { get; set; }
 
-        public float telefone { get; set; }
+        public int telefone { get; set; }
 
-        public float NIF { get; set; }
+        public int NIF { get; set; }
 
         // um cliente tem uma coleção de compras
         public virtual ICollection<Compra> ListaCompras { get; set; }

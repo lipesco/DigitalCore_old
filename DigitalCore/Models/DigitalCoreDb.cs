@@ -22,6 +22,7 @@ namespace DigitalCore.Models
         public virtual DbSet<TipoPagamento> TipoPagamento { get; set; }
         public virtual DbSet<ProdutoCompra> ProdutoCompra { get; set; }
         public virtual DbSet<Produto> Produto { get; set; }
+        public virtual DbSet<TipoProduto> TipoProduto { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

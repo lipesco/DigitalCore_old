@@ -6,12 +6,12 @@ using System.Web;
 
 namespace DigitalCore.Models
 {
-    public class TipoPagamento
+    public class TipoProduto
     {
-        public TipoPagamento()
+        public TipoProduto()
         {
-            // inicialização da lista de compras de um tipo
-            ListaTipoPagamento = new HashSet<Compra>();
+            // inicialização da lista de Produtos de um Tipo de Produto
+            ListaTipoProduto = new HashSet<Produto>();
         }
 
         public int ID { get; set; }
@@ -21,7 +21,6 @@ namespace DigitalCore.Models
         public string descricao { get; set; }
 
         // um TipoPagamento tem uma coleção de compras
-        public virtual ICollection<Compra> ListaTipoPagamento { get; set; }
-
+        public virtual ICollection<Produto> ListaTipoProduto { get; set; }
     }
 }

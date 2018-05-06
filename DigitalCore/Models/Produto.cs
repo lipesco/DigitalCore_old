@@ -16,18 +16,21 @@ namespace DigitalCore.Models
         public int ID { get; set; }
 
         [Required]
-        public string Descricao { get; set; }
+        public int numeroSerie { get; set; }
 
         [Required]
-        public string Caracteristicas { get; set; }
+        public int tipo { get; set; }
 
         [Required]
-        public int Preco { get; set; }
-
-        public string Imagem { get; set; }
+        public string descricao { get; set; }
 
         [Required]
-        public int NumeroSerie { get; set; }
+        public string caracteristicas { get; set; }
+
+        [Required]
+        public string preco { get; set; }
+
+        public string imagem { get; set; }
 
         public virtual ICollection<ProdutoCompra> ListaDeObjectosProdutoCompra { get; set; }
 

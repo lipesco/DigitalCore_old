@@ -17,10 +17,10 @@ namespace DigitalCore.Models
         public int ID { get; set; }
 
         [Column(TypeName = "date")] //só regista 'datas', não 'horas'
-        public DateTime DataCompra { get; set; }
+        public DateTime dataCompra { get; set; }
 
         [Column(TypeName = "date")] //só regista 'datas', não 'horas'
-        public DateTime DataEntrega { get; set; }
+        public DateTime dataEntrega { get; set; }
 
         [ForeignKey("Cliente")]
         public int ClienteFK { get; set; }

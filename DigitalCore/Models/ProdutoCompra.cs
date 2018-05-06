@@ -30,8 +30,8 @@ namespace DigitalCore.Models
 
         //***********************************************************************
 
-        public float Quantidade { get; set; }
+        public int quantidade { get; set; }
 
-        public int IVA { get; set; }
+        public string IVA { get; set; }
     }
 }

@@ -110,6 +110,7 @@
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Models\ProdutoCompra.cs" />
     <Compile Include="Models\TipoPagamento.cs" />
+    <Compile Include="Models\TipoProduto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
