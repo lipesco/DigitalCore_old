@@ -14,26 +14,25 @@ namespace DigitalCore.Models
             ListaCompras = new HashSet<Compra>();
         }
 
-        [Key]
         public int ID { get; set; }
         [Required]
-        [StringLength(30)]
+        [StringLength(50)]
         public string Nome { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(15)]
         public string username { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(20)]
         public string password { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(50)]
         public string morada { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(50)]
         public string email { get; set; }
 
         public float telefone { get; set; }

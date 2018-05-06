@@ -9,7 +9,7 @@ namespace DigitalCore.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(DigitalCore.Models.DigitalCoreDb context)

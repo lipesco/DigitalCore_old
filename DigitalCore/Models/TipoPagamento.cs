@@ -18,7 +18,7 @@ namespace DigitalCore.Models
         public int ID { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(20)]
         public string Descricao { get; set; }
 
         // um TipoPagamento tem uma coleção de compras

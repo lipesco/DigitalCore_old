@@ -13,15 +13,18 @@ namespace DigitalCore.Models
             ListaDeObjectosProdutoCompra = new HashSet<ProdutoCompra>();
         }
 
-        [Key]
         public int ID { get; set; }
 
         [Required]
-        [StringLength(30)]
         public string Descricao { get; set; }
 
         [Required]
+        public string Caracteristicas { get; set; }
+
+        [Required]
         public int Preco { get; set; }
+
+        public string Imagem { get; set; }
 
         [Required]
         public int NumeroSerie { get; set; }

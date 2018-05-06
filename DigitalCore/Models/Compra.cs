@@ -14,7 +14,6 @@ namespace DigitalCore.Models
             ListaDeObjectosProdutoCompra = new HashSet<ProdutoCompra>();
         }
 
-        [Key]
         public int ID { get; set; }
 
         [Column(TypeName = "date")] //só regista 'datas', não 'horas'
